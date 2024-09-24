@@ -21,12 +21,12 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-csharp-prep-Prep1",
-            "program": "${workspaceFolder}/csharp-prep/Prep1/bin/Debug/net8.0/Prep1.dll",
+            "program": "${workspaceFolder}\\csharp-prep\\Prep1\\bin\\Debug\\net8.0\\Prep1.dll",
             "args": [],
             "cwd": "${workspaceFolder}/csharp-prep/Prep1",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
-            "stopAtEntry": false
+            "stopAtEntry": false,
         },
 
         {
