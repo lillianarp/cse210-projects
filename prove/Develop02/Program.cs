@@ -4,11 +4,9 @@ using System.Security;
 
 // Journal Project | CSE 210
 
-// The nav menu goes here
-// if statements for each menu option 
-
-// Exceeding Requirements: Added more conversational text to help users know what is happening as they work through the app, e.g. added 'Here are your journal entries,' and 'Journal loaded from {fileName}', etc.
-// Exceeding Requirements; 
+// Exceeding Requirements: Added text (and expanded menu descriptions) to help users know what is happening as they work through the app, e.g. added 'Here are your journal entries,' and 'Journal loaded from {fileName}', etc.
+// Exceeding Requirements: Added code (in the ) to show user how many entries are in the journal.
+// Exceeding Requirements: Added logic to check if the userFileName already exists and whether the user wants to overide it or not.
 
 class Program
 {
@@ -34,7 +32,7 @@ class Program
 
             if (option == "1")
             {
-                Console.WriteLine("");
+                Console.WriteLine();
                 // create a new entry object
                 Entry newEntry = new Entry();
                 newEntry._date = DateTime.Now.ToString("dd/MM/yyyy");
@@ -48,20 +46,20 @@ class Program
 
                 // add entry to journal
                 journal.AddEntry(newEntry);
-                Console.WriteLine("");
+                Console.WriteLine();
                 Console.WriteLine("Entry saved.");
-                Console.WriteLine("");
+                Console.WriteLine();
 
             }
             else if (option == "2")
             {
                 // display all entries
-                Console.WriteLine("");
+                Console.WriteLine();
                 Console.WriteLine("Here are all your journal entries:");
-                Console.WriteLine("");
+                Console.WriteLine();
                 journal.DisplayAll();
                 Console.WriteLine($"You have {journal._entries.Count} journal entries."); // Exceeding Requirements: Shows the user how many journal entries they have
-                Console.WriteLine("");
+                Console.WriteLine();
             }
             else if (option == "3")
             {
@@ -70,9 +68,9 @@ class Program
                 string fileName = Console.ReadLine();
                 journal.LoadFromFile(fileName);
 
-                Console.WriteLine("");
+                Console.WriteLine();
                 Console.WriteLine($"Journal loaded from {fileName}."); // Exceeding Requirements: Text guides to help users confirm what the program is doing
-                Console.WriteLine("");
+                Console.WriteLine();
             }
             else if (option == "4")
             {
@@ -92,16 +90,16 @@ class Program
 
                 journal.SaveToFile(userFileName);
 
-                Console.WriteLine("");
+                Console.WriteLine();
                 Console.WriteLine($"Journal saved to {userFileName}.");
-                Console.WriteLine("");
+                Console.WriteLine();
             }
             else if (option == "5")
             {
                 // exit the program 
                 quit = true; // break the loop 
                 Console.WriteLine("See you again next time");
-                Console.WriteLine("");
+                Console.WriteLine();
             }
 
         }
