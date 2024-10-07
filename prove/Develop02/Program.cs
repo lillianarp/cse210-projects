@@ -5,7 +5,7 @@ using System.Security;
 // Journal Project | CSE 210
 
 // Exceeding Requirements: Added text (and expanded menu descriptions) to help users know what is happening as they work through the app, e.g. added 'Here are your journal entries,' and 'Journal loaded from {fileName}', etc.
-// Exceeding Requirements: Added code (in the ) to show user how many entries are in the journal.
+// Exceeding Requirements: Added code (in the SaveToFile method) to show user how many entries are in the journal.
 // Exceeding Requirements: Added logic to check if the userFileName already exists and whether the user wants to overide it or not.
 
 class Program
