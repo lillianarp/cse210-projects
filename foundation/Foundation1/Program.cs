@@ -26,6 +26,7 @@ class Program
         Video video3 = new Video("Coconut prawn curry + Harissa salmon", "Tish Wonders", 856); 
         video3.AddComment(new Comment("pfuluwanino", "Everything about Tish is just so beautiful."));
         video3.AddComment(new Comment("mthomas73", "Amazing looking recipes can't wait to try them"));
+        video3.AddComment(new Comment("fayr8807", "Always on time with the inspiration!  Also your skin is so flawless!!"));
 
         videoList.Add(video3); 
 
