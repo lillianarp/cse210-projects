@@ -1,0 +1,4 @@
+2050
+SimpleGoal: Finish this program, And submit it already!, 1000, True
+EternalGoal: Do intermittent fasting, Do an early Eating 16 hour fast, 50
+SimpleGoal: Scrub the toilet, Use disinfectant, 100, True
